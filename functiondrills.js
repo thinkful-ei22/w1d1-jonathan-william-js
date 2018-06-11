@@ -43,3 +43,42 @@ const decode = function (word) {
 };
 
 decode('craft');
+
+
+
+
+const daysInMonth = function(month, leapYear){
+  switch(month){
+    case 'January':
+    case 'March':
+    case 'May':
+    case 'July':
+    case 'August':
+    case 'October':
+    case 'December':
+      result = `${month} has 31 days.`;
+      break;
+  }
+  switch(month){
+    case 'April':
+    case 'June':
+    case 'September':
+    case 'November':
+      result = `${month} has 30 days.`;
+      break;
+
+  }
+  switch('February'){
+    case leapYear == -1:
+      result = `February has 29 days.`;
+      break;
+    }
+switch('February'){
+  case leapYear === 1:
+  result = `February has 28 days.`;
+}
+
+throw ("Must provide a valid month");
+  
+}
+daysInMonth('March', -1);
