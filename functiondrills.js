@@ -63,6 +63,7 @@ function decode(message){
 
 console.log(decode(message));
 
+<<<<<<< HEAD
 // console.log(message.split(' '));
 
 function numberOfDays(month, leapYear) {
